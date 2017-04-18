@@ -4,3 +4,4 @@ module.exports =
   filter: require './filter'
   convert: require './convert'
   file: require './file'
+  simple_fold: require './simple_fold'

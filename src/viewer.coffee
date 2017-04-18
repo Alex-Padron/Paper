@@ -298,4 +298,3 @@ viewer.update = (view) ->
     end = geom.plus(geom.mul(v, 0.05 * cam.r), cam.c)
     viewer.setAttrs(cam.axis[c], {
       d: viewer.makePath(viewer.proj(p, cam) for p in [cam.c, end])})
-

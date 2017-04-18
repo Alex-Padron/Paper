@@ -138,4 +138,3 @@ print "geom.centroid(ps2) = [#{geom.centroid(ps2)}]"
 
 print "geom.basis(ps1) = #{geom.basis(ps1).length}: [#{geom.basis(ps1)}]"
 print "geom.basis(ps2) = #{geom.basis(ps2).length}: [#{geom.basis(ps2)}]"
-

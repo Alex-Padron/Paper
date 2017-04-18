@@ -312,4 +312,3 @@ geom.quadSplit = (u, p, d, t) ->
   if geom.magsq(p) > d * d
     throw new Error "STOP! Trying to split expansive quad."
   return geom.mul(u, (d*d - geom.magsq(p))/2/(d*Math.cos(t) - geom.dot(u, p)))
-
