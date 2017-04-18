@@ -1,6 +1,10 @@
 # Compiled .js
 lib
 
+# Temp files
+*~*
+*#*
+
 # Logs
 logs
 *.log
