@@ -1,0 +1,28 @@
+{
+	"file_spec": 1,
+	"file_creator": "manual",
+	"file_author": "abhijitm",
+	"file_classes": ["singleModel"],
+	"frame_title": "single vertex",
+	"frame_classes": ["creasePattern"],
+	"frame_attributes": ["2D"],
+	"vertices_coords": [
+		[0,0],
+		[1,0],
+		[0,1],
+		[-1,0],
+		[0,-1]
+	],
+	"edges_vertices": [
+		[0,1],
+		[0,2],
+		[0,3],
+		[0,4]
+	],
+	"edges_assignment": [
+		"M",
+		"V",
+		"M",
+		"M"
+	]
+}

@@ -1,0 +1,48 @@
+{
+	"file_spec": 1,
+	"file_creator": "manual",
+	"file_author": "abhijitm",
+	"file_classes": ["singleModel"],
+	"frame_title": "2D foldable crease pattern",
+	"frame_classes": ["creasePattern"],
+	"frame_attributes": ["2D"],
+	"vertices_coords": [
+		[0,0],
+		[0,1],
+		[0,2],
+		[1,0],
+		[1,1],
+		[1,2],
+		[2,0],
+		[2,1],
+		[2,2]
+	],
+	"edges_vertices": [
+		[0,1],
+		[0,3],
+		[1,2],
+		[1,4],
+		[2,5],
+		[3,4],
+		[3,6],
+		[4,5],
+		[4,7],
+		[5,8],
+		[6,7],
+		[7,8]
+	],
+	"edges_assignment": [
+		"B",
+		"B",
+		"B",
+		"M",
+		"B",
+		"V",
+		"B",
+		"V",
+		"V",
+		"B",
+		"B",
+		"B"
+	]
+}
