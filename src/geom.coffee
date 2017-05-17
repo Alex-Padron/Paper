@@ -123,6 +123,13 @@ geom.parallel = (a, b, eps = EPS) ->
   return null unless ua? and ub?
   1 - Math.abs(geom.dot ua, ub) < eps
 
+geom.perpendicular_bisector_symmetric = (a, b, e1, e2, eps = EPS) ->
+  ## Return whether a and b are symmetric around the perpendicular
+  ## bisector of e1, e2
+  if not geom.parallel(geom.sub(a, b), geom.sub(e1, e2), eps)
+    return false
+  return geom.dist(a, e1) - geom.dist(b, e2) <= eps
+
 geom.rotate = (a, u, t) ->
   ## Returns the rotation of 3D vector a about 3D unit vector u by angle t.
   u = geom.unit(u)
@@ -312,4 +319,3 @@ geom.quadSplit = (u, p, d, t) ->
   if geom.magsq(p) > d * d
     throw new Error "STOP! Trying to split expansive quad."
   return geom.mul(u, (d*d - geom.magsq(p))/2/(d*Math.cos(t) - geom.dot(u, p)))
-
