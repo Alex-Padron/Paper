@@ -25,21 +25,6 @@ simple_fold.fold = (fold, edge, angle) ->
       fold.vertices_coords[vertex] = new_vertex
   return true
 
-simple_fold.check_intersections = (fold) ->
-  for face1 in fold.faces_vertices
-    for face2 in fold.faces_vertices
-      if face1 == face2
-        continue
-      for i in range(len(face1) - 2)
-        for j in range(len(face2) - 2)
-          t1 = simple_fold.face_to_triangle(fold, face1, i)
-          t2 = simple_fold.face_to_triangle(fold, face2, j)
-
-simple_fold.face_to_triangle = (fold, face, index) ->
-  return [fold.vertices_coords[face[index]],
-    fold.vertices_coords[face[index + 1]],
-    fold.vertices_coords[face[index + 2]]]
-
 # creates two sets of edges that are disjoint around the edge
 # @param fold {FOLD object} to perform partition on
 # @param edge {int tuple} that is partitioning fold
